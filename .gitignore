@@ -1,0 +1,7 @@
+temp.*
+.vscode/
+*.gen.gcode
+*.drl
+*.gbr
+flatcam.shell
+kicad-env-config.sh

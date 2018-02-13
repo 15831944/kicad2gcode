@@ -1,0 +1,6 @@
+offset pcb -12 198
+offset drl -12 198
+
+isolate pcb -dia 0.1 -passes 3 -overlap 0.05 -combine 1 -outname pcb_iso
+cncjob pcb_iso -z_cut -0.1 -z_move 0.5 -feedrate 128.0 -tooldia 0.1 -spindlespeed 1000 -multidepth true -depthperpass 0.1 -outname pcb_iso_cnc
+drillcncjob drl -drillz -0.3 -travelz 0.5 -feedrate 8.0 -spindlespeed 1000 -outname drl_cnc
