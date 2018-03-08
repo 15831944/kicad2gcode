@@ -20,14 +20,14 @@ echo "Loading vars..."
 if [ -z "$1" ];
 then
     echo "Please provide a project name."
-    echo "Usage: ./gerber2gcode.sh <project-name> <profile>"
+    echo "Usage: ./kicad2gcode.sh <project-name> <profile>"
     exit 2
 fi
 
 if [ -z "$2" ];
 then
     echo "Please provide a project name. (Available: $(ls flatcam.shell.*.tmpl | tr " " "\n" | cut -d"." -f3 | tr "\n" " "))"
-    echo "Usage: ./gerber2gcode.sh $1 <profile>"
+    echo "Usage: ./kicad2gcode.sh $1 <profile>"
     exit 3
 fi
 
