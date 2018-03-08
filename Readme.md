@@ -22,9 +22,9 @@ so you will obtain a gcode file named `all.gen.gcode` within seconds, which you 
 
 ## Limits
 - ⚠️ I added a slowstart script that slowly turns on the spindle. Directly going to 100% blows the fuse on the powersupply that was delivered with my CNC. ⚠️
-- I only use the default 0.1mm V-shape drill bit
-- Holes are drilled to -0.3mm with the V-shape, this allows to easily drill them manually
-- Only isolation milling is done, start with 0.5mm track width and 0.2mm clearance
+- Milling is done with a 0.1mm V-shape drill bit
+- Holes are drilled to -1.6mm, all with the same drill bit (TODO?)
+- Cutout is done in a single pass at -1.6mm, non rectangular cutout supported
 
 ## Details
 
